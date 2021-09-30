@@ -1,4 +1,8 @@
-
+/*
+ * Project OOP3200_ICE_3
+ * @author Tyler Osborne
+ * date: 2021/09/29
+ */
 
 #include <iostream>
 #include <vector>

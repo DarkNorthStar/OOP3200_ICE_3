@@ -1,7 +1,7 @@
-/**
- * Project OOP3200-F2020-Lesson4
- * @author Tom Tsiliopoulos
- * @version 1.0
+/*
+ * Project OOP3200_ICE_3
+ * @author Tyler Osborne
+ * date: 2021/09/29
  */
 
 
