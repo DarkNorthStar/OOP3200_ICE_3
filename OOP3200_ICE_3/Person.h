@@ -20,7 +20,8 @@ public:
  * @param age
  */
 Person(std::string first_name, std::string last_name, float age); // constructor
-    
+//virtual ~Person() = 0; // virtual
+
 float getAge() const; // returns age
     
 /**
