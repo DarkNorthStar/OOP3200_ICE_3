@@ -20,20 +20,20 @@ public:
  * @param age
  * @param employee_id
  */
-void Professor(string first_name, string last_name, float age, string employee_id);
-    
-string getEmployeeID();
+Professor(const std::string& first_name, const std::string& last_name, float age, std::string employee_id);
+
+std::string getEmployeeID() const;
     
 /**
  * @param value
  */
-void setEmployeeID(string value);
+void setEmployeeID(const std::string& value);
     
 void Teaches();
-    
-string ToString();
-private: 
-    string m_employeeID;
+
+std::string ToString() override;
+private:
+std::string m_employeeID;
 };
 
 #endif //_PROFESSOR_H
