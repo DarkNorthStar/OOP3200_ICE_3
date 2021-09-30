@@ -14,22 +14,22 @@
  * Person implementation
  */
 
-
 /**
  * @param first_name
  * @param last_name
  * @param age
  */
-Person::Person(std::string first_name, std::string last_name, float age)
-	:m_age(age), m_firstName(std::move(first_name)), m_lastName(std::move(last_name))
+Person::Person(std::string first_name, std::string last_name, float age) 
+	:m_age(age), m_firstName(std::move(first_name)), m_lastName(std::move(last_name)) // Constructor
 {
 
 }
 
+
 /**
  * @return float
  */
-float Person::getAge() const
+float Person::getAge() const // returns age
 {
     return m_age;
 }
@@ -37,7 +37,7 @@ float Person::getAge() const
 /**
  * @param value
  */
-void Person::setAge(const float value)
+void Person::setAge(const float value) // sets age
 {
     m_age = value;
 }
@@ -45,7 +45,7 @@ void Person::setAge(const float value)
 /**
  * @return string
  */
-std::string Person::getFirstName() const
+std::string Person::getFirstName() const // returns first name
 {
     return m_firstName;
 }
@@ -53,7 +53,7 @@ std::string Person::getFirstName() const
 /**
  * @param value
  */
-void Person::setFirstName(const std::string& value)
+void Person::setFirstName(const std::string& value) // Sets first name
 {
     m_firstName = value;
 }
@@ -61,7 +61,7 @@ void Person::setFirstName(const std::string& value)
 /**
  * @return string
  */
-std::string Person::getLastName() const
+std::string Person::getLastName() const // return last name
 {
     return m_lastName;
 }
@@ -69,7 +69,7 @@ std::string Person::getLastName() const
 /**
  * @param value
  */
-void Person::setLastName(const std::string& value)
+void Person::setLastName(const std::string& value) // set last name
 {
     m_lastName = value;
 }
@@ -77,9 +77,9 @@ void Person::setLastName(const std::string& value)
 /**
  * @return void
  */
-void Person::SaysHello()
+void Person::SaysHello() // outputs hello from the person
 {
-    std::cout << getFirstName() << "says Hello!!!!" << std::endl;
+    std::cout << getFirstName() << " says Hello!!!!" << std::endl;
 }
 
 
@@ -87,7 +87,7 @@ void Person::SaysHello()
 /**
  * @return string
  */
-std::string Person::ToString()
+std::string Person::ToString() // returns a string of the person
  {
     std::string output_string;
     output_string += "-------------------------------------------\n";

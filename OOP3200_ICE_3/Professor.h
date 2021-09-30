@@ -20,18 +20,18 @@ public:
  * @param age
  * @param employee_id
  */
-Professor(const std::string& first_name, const std::string& last_name, float age, std::string employee_id);
+Professor(const std::string& first_name, const std::string& last_name, float age, std::string employee_id); // constructor
 
-std::string getEmployeeID() const;
+std::string getEmployeeID() const; // returns employee id
     
 /**
  * @param value
  */
-void setEmployeeID(const std::string& value);
+void setEmployeeID(const std::string& value); // sets employee id
     
-void Teaches();
+void Teaches(); // outputs that the professor is teaching
 
-std::string ToString() override;
+std::string ToString() override; // returns a string of the professor
 private:
 std::string m_employeeID;
 };

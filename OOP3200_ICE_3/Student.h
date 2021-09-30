@@ -23,18 +23,18 @@ public:
  */
 Student(std::string first_name, std::string last_name, float age, std::string student_id);
 
-std::string getStudentID() const;
+std::string getStudentID() const; // returns student id
     
 /**
  * @param value
  */
-void setStudentID(const std::string& value);
+void setStudentID(const std::string& value); // sets student id
     
-void Studies() const;
+void Studies() const; // outputs that the student is studying
 
-std::string ToString() override;
+std::string ToString() override; // returns string output of the student 
 private:
-std::string m_studentID;
+std::string m_studentID; // student id exclusive to student
 };
 
 #endif //_STUDENT_H

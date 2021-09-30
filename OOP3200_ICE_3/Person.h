@@ -19,32 +19,32 @@ public:
  * @param last_name
  * @param age
  */
-Person(std::string first_name, std::string last_name, float age);
+Person(std::string first_name, std::string last_name, float age); // constructor
     
-float getAge() const;
-    
-/**
- * @param value
- */
-void setAge(float value);
-
-std::string getFirstName() const;
+float getAge() const; // returns age
     
 /**
  * @param value
  */
-void setFirstName(const std::string& value);
+void setAge(float value); //sets age
 
-std::string getLastName() const;
+std::string getFirstName() const; //gets first name
     
 /**
  * @param value
  */
-void setLastName(const std::string& value);
-    
-void SaysHello();
+void setFirstName(const std::string& value); // sets first name
 
-virtual std::string ToString();
+std::string getLastName() const; // returns last name
+    
+/**
+ * @param value
+ */
+void setLastName(const std::string& value); // Sets last name
+    
+void SaysHello(); // person says hello
+
+virtual std::string ToString(); // returns a string of the person
 
 private: 
     float m_age;
